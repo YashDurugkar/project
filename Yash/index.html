@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
+   <!--reservation css-->   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  font-size: small;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+   <!-- header -->
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> Homestay </a>
+
+      <nav class="navbar">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#room">room</a>
+         <a href="#gallery">gallery</a>
+         <a href="..\Tanaya\food.html">Food</a>
+         <a href="#Reservation">Reservation</a>
+         <a href="..\login-page\index.html" style="flex-basis: 48%;
+         background: #3c00a0;
+         color: #fff;
+         height: auto;
+         border-radius: 20px;
+         border: 0;
+         outline: 0;
+         padding: 7px;
+         padding-left: 15px;
+         padding-right: 15px;
+         cursor: pointer;         
+         ">Log in</a>
+
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home4.jpg) no-repeat;">
+               
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home6.jpg) no-repeat;">
+               
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home3.jpg) no-repeat;">
+               
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/homestays2.jpeg) no-repeat;">
+               
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- availability -->
+
+   <section class="availability">
+
+      <form action="">
+
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">1 adults</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>children <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="1">1 child</option>
+               <option value="2">2 child</option>
+               <option value="3">3 child</option>
+               <option value="4">4 child</option>
+               <option value="5">5 child</option>
+               <option value="6">6 child</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1 rooms</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+
+         <input type="submit" value="check availability" class="btn">
+
+      </form>
+
+   </section>
+
+   <!-- end -->
+
+
+   <!-- about -->
+
+   <section class="about" id="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201807171721404726-0b2201648dab11ec92390a58a9feac02.jpg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>about us</h3>
+            <p>
+               This homestay is situated at a prime location with access to the city centre.
+               
+               It is just ten minutes drive from Kune Falls, Lonavala Lake, Narayani Dham Temple and Della Adventure Park.
+               
+               There are also multiple wax museums nearby to visit.
+               
+               The house is well furnished with all modern amenities like TV, Fridge, Oven, Kitchen etc..</p>
+            
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- room -->
+
+   <section class="room" id="room">
+
+      <h1 class="heading">Properties</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  
+                  <img src="https://cdn1.goibibo.com/voy_mmt/t_g/htl-imgs/202206162332349985-f1b822aeed9411ec851c0a58a9feac02.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3> Dream Rooms </h3>
+                  <p>QC44+4R9, Tungarli Rd, Tungarli, Lonavala.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="D:\final Project\Arti Jaigaonkar\Page 1\.html" class="btn" >book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  
+                  <img src="https://images.thrillophilia.com/image/upload/s--W9Edcd9I--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/183/613/original/1575618484_67201176.jpg.jpg?1575618484" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Homestay room</h3>
+                  <p> Near Shriam Mandir, Lonavala.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="..\Arti Jaigaonkar\Page 2\Home.html" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  
+                  <img src="https://cf.bstatic.com/xdata/images/hotel/270x200/292731855.jpg?k=8782a15fb0a2c52d1bf667bc0ce2bb011b44d56a27cbd66508755b9e34da7362&o=" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>your dream homestay </h3>
+                  <p>Lonavala Road, 410401 Lonavala, India</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="..\Arti Jaigaonkar\Page3\.html" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  
+                  <img src="https://imgmedia.lbb.in/media/2019/06/5d110842c60c564f352fb653_1561397314132.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Seasons Homestay</h3>
+                  <p> New Tungarli Road, 410401 Lonavala, India</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="..\Arti Jaigaonkar\page 4\.html" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  
+                  <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/457714189.jpg?k=3cf427a3dfe373d79fc707906cc9aec0090857ef04005e42bcc1264971e55daf&o=&hp=1" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Deluxe Suite</h3>
+                  <p>One Bed.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  
+                  <img src="https://www.cloud9lonavala.com/images/villas/3bhk/7.jpg" alt="">
+                  <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                  <h3>One Bedroom</h3>
+                  <p>One bedroom.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- services -->
+
+   <section class="services">
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/service1.png" alt="">
+            <h3>swimming pool</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service2.png" alt="">
+            <h3>food & drink</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service3.png" alt="">
+            <h3>restaurant</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service4.png" alt="">
+            <h3>fitness</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service5.png" alt="">
+            <h3>beauty spa</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service6.png" alt="">
+            <h3>resort beach</h3>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- gallery -->
+
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading">our gallery</h1>
+
+      <div class="swiper gallery-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="https://img.hwnstatic.com/500/350/80/false/hS6xM66VW7aPPkNHCWPi.PFFPwqfnBUd:I7pTXuEkLetAsoFkBzVn8ylNy05cd1rF1rbGG2kdOGpdmkncN2H2rgDrWIwmQqlYijWrTqbrxfP:s89NUD5deYztZHYiNj.zKHYXHxc9xq4Pl.4ZDmPbJc6CbGa5Kb1kpmA7lq9C5HhstoK6cqOns30VPHB0g__" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            
+            <div class="swiper-slide slide">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRibv1jQgi2yJiUArE9qMYYg9yMJQ4uLUWZryHlu3tCYTTlpN6T_BN9U7jrL_bV6UDpr4Y&usqp=CAU" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- review -->
+
+   
+
+   <!-- end -->
+
+   <!-- faq -->
+
+   
+
+   <!-- end -->
+
+   <!-- reservation -->
+
+   <section class="Reservation" id="Reservation">
+      <div class="container">
+         <div class="hotel_reserve_box card">
+     <h3> Hotel Reservation Form </h3><br>
+     <style>
+      body{font-size: large;}
+     </style>
+     <form>
+         <div class="form-group">
+             <label>Room/Suite Type</label>
+             <select class="form-control" id="room_type" onchange="finalCost()">
+                 <option value="0" selected>Select Room/Suite </option>
+                 <option value="1"> Standard </option>
+                 <option value="2"> Deluxe </option>
+                 <option value="3"> Superior Deluxe </option>
+                 <option value="4"> Premier Deluxe  </option>
+                 <option value="5"> Executive Suite </option>
+                 <option value="6"> Junior Suite </option>
+                 <option value="7"> Honeymoon Suite </option>
+             </select>
+         </div>
+         <div class="form-group">
+             <label>Number of room/suite</label>
+             <select class="form-control" id="room_number" onchange="finalCost()">
+                 <option value="0"> 0 </option>
+                 <option value="1"> 1 </option>
+                 <option value="2"> 2 </option>
+                 <option value="3"> 3 </option>
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+                 <option value="6"> 6 </option>
+                 <option value="7"> 7 </option>
+             </select>
+         </div>
+         <div class="form-group">
+             <label>Number of persons</label>
+             <select class="form-control" id="person_number" onchange="finalCost()">
+                 <option value="0"> 0 </option>
+                 <option value="0"> 1 </option>
+                 <option value="0"> 2 </option>
+                 <option value="3"> 3 </option>
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+                 <option value="6"> 6 </option>
+                 <option value="7"> 7 </option>
+             </select>
+         </div>
+         <div class="form-group">
+             <label>Number of children</label>
+             <select class="form-control" id="child_number" onchange="finalCost()">
+                 <option value="0"> 0 </option>
+                 <option value="0"> 1 </option>
+                 <option value="2"> 2 </option>
+                 <option value="3"> 3 </option>
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+                 <option value="6"> 6 </option>
+                 <option value="7"> 7 </option>
+             </select>
+         </div>
+         <div class="form-group">
+             <label>Restaurant facilities?</label>
+             <select class="form-control" id="res_facilities" onchange="finalCost();">
+                 <option value="0" selected> Do you want restaurant facilities? </option>
+                 <option value="2"> Yes </option>
+                 <option value="0"> No </option>
+             </select>
+         </div><br>
+         <div class="form-group">
+             <label>Total Cost (RM) : </label>
+             <a href=""><span id="result" style="background-color: #0077b6;color: rgb(255, 255, 255);padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span></a>
+         </div>
+      </form>
+      </div>
+      </div>
+      </div>
+      
+      <script type="text/javascript">
+         
+         function finalCost(){
+          var roomType = document.getElementById("room_type").value;
+          var roomNum = document.getElementById("room_number").value;
+          var personNum = document.getElementById("person_number").value;
+          var childNum = document.getElementById("child_number").value;
+          var resFacilities = document.getElementById("res_facilities").value;
+
+          var total = (parseInt(roomType)*1000) + ((roomNum)*200) + ((personNum)*300) + ((childNum)*150) + ((resFacilities)*300)
+
+          document.getElementById("result").innerHTML = total;
+         }
+  
+
+   </script>
+   </section>
+   <!-- end -->
+
+   <!-- footer -->
+
+   
+
+   <!-- endd -->
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+   <script src="script.js"></script>
+
+</body>
+</html>

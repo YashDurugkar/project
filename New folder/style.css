@@ -1,0 +1,132 @@
+h1{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-style: inherit;
+ color: rgb(215, 51, 51);
+ background-color: rgb(166, 215, 223);
+}
+.foodie{
+width: 80%;
+padding: 1%;
+}
+.image{
+height: 150px;
+width: 150px;
+margin-left: 30%;
+float: left;
+}
+
+table, th, td {
+border:2px solid black;
+text-align: center;
+background-color: rgb(232, 226, 216);
+}
+
+.column {
+  float: left;
+  padding: 6px;
+  width: 350px;
+  height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(67, 67, 164, 0.2);
+  width: 350px;
+  max-width: 800px;
+  margin: 0cap;
+  text-align: center;
+  font-family: arial;
+}
+
+.column button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.column button:hover {
+  opacity: 0.7;
+}
+
+.details-button {
+  background-color: #f0f0f0;
+  border: none;
+  color: #251f1f;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button{
+  background-color: #f0f0f0;
+
+}
+
+.data-content{
+  
+}
+.button-group{
+  background-color: rgb(231, 188, 188);
+  
+
+}
+
+
+
+
+.food-item {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.food-item h3 {
+  margin: 10px 0;
+}
+
+.food-item p {
+  margin: 0;
+}
+
+
+.details-content {
+  background-color: #faf0f0;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+
+.details-content p {
+  margin-bottom: 5px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
